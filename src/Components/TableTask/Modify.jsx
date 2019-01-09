@@ -54,7 +54,7 @@ class Modify extends Component{
         return(
             <div className="col-xs-4">
                 <legend>
-                        <b>Thêm mới công việc</b>
+                        <b>{this.state.id === "" ? "Thêm mới công việc" : "Cập nhật công việc"}</b>
                         <i style = {{float:"right", color: "#F00",cursor: "pointer"}} 
                             className="glyphicon glyphicon-remove"
                             onClick = {this.props.onCloseForm}
